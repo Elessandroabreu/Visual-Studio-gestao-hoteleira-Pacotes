@@ -1,0 +1,21 @@
+/* Estilo relacionado ao módulo de pacotes */
+body{
+  
+}
+#nome-principal{
+    margin:  0px auto ;
+    padding: 0px;   
+}
+#principalCss{
+    width:80% ;
+    height: 80vh;
+    margin: auto ;
+    border-radius: 5%;
+    border:transparent solid;
+    
+
+}
+.conteudo-tabela{
+    overflow-y: scroll;
+    height: 37vh;
+}

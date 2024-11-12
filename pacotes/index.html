@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Configurações inciais -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão Hoteleira - Gerenciamento de Pacotes</title>
+    <link rel="icon" href="/assets/imagens/favicon.png" type="image/png">
+
+    <!-- Integrações internas -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <script src="/assets/js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="/pacotes/pacotes.css">
+    <script src="/pacotes/pacotes.js"></script>
+
+    <!-- Integrações externos -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+    <div id="loading">
+        <img src="/assets/imagens/loading.svg" alt="Carregando">
+    </div>
+
+    <div class="geral">
+        <div class="topo">
+            <div class="conteudo">
+                <a href="/">
+                    <span class="material-symbols-outlined icon-topo">Home</span>
+                </a>
+                <a href="/" class="link-logo">
+                    <img src="/assets/imagens/logo-branco.png" alt="Logotipo" class="logo-topo">
+                </a>
+                <a href="/">
+                    <span class="material-symbols-outlined icon-topo">Menu</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="meio">
+            <div class="conteudo modulo">
+                <h1 id="nome-principal">Gerenciamento de Pacotes</h1>
+                <!-- Conteúdo aqui -->
+
+                <div id="principalCss">
+                    <form>
+                        <input type="hidden" id="campo-id">
+                    <div class="item-form">
+                        <label for="campo-nome">
+                            Nome
+                            <span class="campo-obrigatorio" title="Campo obrigatório">*</span>
+                        </label>
+                        <input type="text" id="campo-nome" placeholder="Digite">
+                    </div>
+                
+                    <div class="item-form">
+                        <label for="campo-acomodacao">Acomodação:
+                            <span class="campo-obrigatorio" title="Campo obrigatório">*</span>
+                        </label>
+                        <select id="campo-acomodacao">
+                            <option value="">Selecione</option>
+                            <option value="Suite com cozinha">Suite com cozinha</option>
+                            <option value="Chalé Família">Chalé Família</option>
+                            
+                        </select>
+                    </div>
+                
+                    
+                
+                    <div class="item-form">
+                        <label for="campo-quantidade-diarias">
+                            Quantidade de Diárias
+                            <span class="campo-obrigatorio" title="Campo obrigatório">*</span>
+                        </label>
+                        <input type="number" id="campo-quantidade-diarias" placeholder="Digite a quantidade">
+                    </div>
+                
+                    <div class="item-form">
+                        <label for="campo-valor-total">
+                            Valor Total
+                        </label>
+                        <input type="text" id="campo-valor-total" placeholder="R$ 0,00" >
+                    </div>
+                    <div class="botoes">
+                        <button type="button" id="bt-salvar">Salvar</button>
+                        <button type="reset" id="bt-limpar">Limpar</button>
+                        <button type="button" id="bt-cancelar">Cancelar</button>
+                    </div>
+
+
+
+                    <div class="conteudo-tabela">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Pacote</th>
+                                    <th>Acomodação</th>
+                                    <th> Quantidade de Diárias</th>
+                                    <th>Valor Total</th>
+                                    
+                                    <th class="col-acoes"></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="8"><span id="total-registros">0</span> registros encontrados</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    </form>
+                </div>
+                
+
+                 </div>
+        </div>
+
+        <div class="rodape">
+            <div class="conteudo">
+                <p>© Protótipo de Aplicação para Gestão Hoteleira</p>
+                <p>Todos os direitos reservados</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
